@@ -16,6 +16,48 @@
             android:layout_width="match_parent"
             android:layout_height="102dp">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="85dp"
+                android:layout_height="102dp"
+                android:background="@drawable/CurrentScore"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="bottom|center_horizontal"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="150dp"
+                android:layout_height="51dp"
+                android:background="@drawable/Box"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="High Score:"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:srcCompat="@drawable/GoldCoin"
+                tools:layout_editor_absoluteX="173dp" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
@@ -86,8 +128,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -97,8 +140,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -108,8 +152,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -119,8 +164,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -138,8 +184,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -149,8 +196,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -160,19 +208,20 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
                 <ImageView
-                    android:id="@+id/imageView12"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
             </LinearLayout>
@@ -189,8 +238,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -200,8 +250,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -211,8 +262,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -222,8 +274,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
             </LinearLayout>
@@ -240,8 +293,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -251,8 +305,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -262,8 +317,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
 
@@ -273,8 +329,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:background="@color/material_on_background_disabled"
-                    android:padding="5dp"
-                    android:scaleType="fitCenter"
+                    android:paddingLeft="2dp"
+                    android:paddingTop="42dp"
+                    android:scaleType="centerInside"
                     android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/Wallnut" />
             </LinearLayout>
