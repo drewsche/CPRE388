@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/Frontyard"
+    android:background="@drawable/frontyard"
     tools:context=".GameActivity">
 
     <LinearLayout
@@ -14,7 +14,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="102dp">
+            android:layout_height="100dp">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -22,14 +22,14 @@
                 android:layout_height="match_parent"
                 android:scaleType="fitXY"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.85"
+                app:layout_constraintHorizontal_bias="0.89"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/box"
                 tools:layout_editor_absoluteY="0dp" />
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="85dp"
+                android:id="@+id/game_text_currentScore"
+                android:layout_width="84dp"
                 android:layout_height="102dp"
                 android:background="@drawable/current_score"
                 android:fontFamily="sans-serif-condensed-medium"
@@ -39,7 +39,7 @@
                 android:textSize="25sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintHorizontal_bias="0.17"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,7 +61,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/game_text_highScore"
                 android:layout_width="0dp"
                 android:layout_height="51dp"
                 android:fontFamily="sans-serif-condensed-medium"
@@ -100,7 +100,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_weight=".9"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -108,10 +108,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/lawn_mower" />
 
                 <ImageView
@@ -119,10 +117,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/lawn_mower" />
 
                 <ImageView
@@ -130,10 +126,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/lawn_mower" />
 
                 <ImageView
@@ -141,10 +135,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/lawn_mower" />
             </LinearLayout>
 
@@ -159,11 +151,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 1"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -171,11 +163,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 2"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -183,11 +175,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 3"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -195,11 +187,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 4"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
             </LinearLayout>
@@ -215,11 +207,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 5"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -227,11 +219,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 6"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -239,11 +231,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 7"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -251,11 +243,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 8"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
             </LinearLayout>
 
@@ -270,11 +262,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 9"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -282,11 +274,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 10"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -294,11 +286,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 11"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -306,11 +298,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 12"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
             </LinearLayout>
 
@@ -325,11 +317,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 13"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -337,11 +329,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 14"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -349,11 +341,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 15"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
 
                 <ImageView
@@ -361,11 +353,11 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@color/material_on_background_disabled"
-                    android:paddingLeft="2dp"
-                    android:paddingTop="42dp"
+                    android:contentDescription="Wallnut 16"
+                    android:onClick="onWallnutClicked"
+                    android:paddingLeft="1dp"
+                    android:paddingTop="35dp"
                     android:scaleType="centerInside"
-                    android:src="@tools:sample/avatars"
                     app:srcCompat="@drawable/wallnut" />
             </LinearLayout>
 
