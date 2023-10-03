@@ -10,10 +10,11 @@ import android.view.View;
 import android.widget.TextView;
 import static java.lang.String.valueOf;
 
-
 public class MainActivity extends AppCompatActivity {
 
+
 //    Button play = findViewById(R.id.button_Play);
+
     private TextView highscore;
     private TextView lastscore;
 
@@ -21,6 +22,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        highscore = findViewById(R.id.textView_hsNum);
+        lastscore = findViewById(R.id.textView_lsNum);
 
         SharedPreferences pref = getPreferences(Context.MODE_PRIVATE);
         highscore.setText(valueOf(pref.getInt("high_score", 0)));
