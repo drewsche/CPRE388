@@ -17,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView highscore;
     private TextView lastscore;
+    private int highScore;
+
+    private int lastScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +29,12 @@ public class MainActivity extends AppCompatActivity {
         highscore = findViewById(R.id.textView_hsNum);
         lastscore = findViewById(R.id.textView_lsNum);
 
-        SharedPreferences pref = getPreferences(Context.MODE_PRIVATE);
-        highscore.setText(valueOf(pref.getInt("high_score", 0)));
-        lastscore.setText(valueOf(pref.getInt("last_score", 0)));
+        SharedPreferences pref = getSharedPreferences("scores", Context.MODE_PRIVATE);
+        highScore = pref.getInt("high_score", 0);
+        lastScore = pref.getInt("last_score", 0);
+
+        highscore.setText(valueOf(highScore));
+        lastscore.setText(valueOf(lastScore));
 
     }
 
