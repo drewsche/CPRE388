@@ -84,7 +84,7 @@ public class GameActivity extends AppCompatActivity {
         model = new ViewModelProvider(this).get(GameViewModel.class);
 
         // Load high score from SharedPreferences
-        SharedPreferences pref = getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences pref = getSharedPreferences("scores", Context.MODE_PRIVATE);
         model.highScore = Math.max(pref.getInt("high_score", 0), model.highScore);
 
         // Initialize UI elements
