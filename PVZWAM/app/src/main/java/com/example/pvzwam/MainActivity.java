@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         highscore = findViewById(R.id.textView_hsNum);
         lastscore = findViewById(R.id.textView_lsNum);
 
