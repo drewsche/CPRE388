@@ -1,9 +1,5 @@
 package com.example.pvzwam;
 
-import static android.graphics.Color.GREEN;
-import static android.graphics.Color.RED;
-
-
 import android.os.Handler;
 import android.os.Looper;
 import android.os.SystemClock;
@@ -14,7 +10,7 @@ import androidx.lifecycle.ViewModel;
 import java.util.Random;
 
 /**
- * The `GameViewModel` class is responsible for managing game data and logic in the Zombie Wallnut game.
+ * The `GameViewModel` class is responsible for managing game data and logic in the PVZWackAMole game.
  * It is part of the Android ViewModel architecture and provides data for the game's user interface (UI)
  * and handles game events.
  */

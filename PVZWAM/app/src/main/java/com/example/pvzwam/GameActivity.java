@@ -21,7 +21,7 @@ import android.widget.TextView;
 import java.util.Random;
 
 /**
- * The `GameActivity` class represents the main game screen of the Zombie game.
+ * The `GameActivity` class represents the main game screen of the PVZWackAMole game.
  * It manages gameplay, user interactions, and audio playback.
  *
  * This class includes methods for initializing game components, handling user clicks
